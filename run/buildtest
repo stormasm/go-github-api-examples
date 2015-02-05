@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+source ./run/build
+
+cd tests/integration
+go test -v
+
+#cd tests/fields
+#go run fields.go

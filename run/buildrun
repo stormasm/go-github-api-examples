@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+
+source ./run/build
+
+cd ./examples/
+go run consumer.go
