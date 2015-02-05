@@ -3,5 +3,8 @@
 
 source ./run/build
 
-cd ./examples/
-go run consumer.go
+#cd ./examples/markdown
+#go run main.go
+
+cd ./examples/repos
+go run main.go
