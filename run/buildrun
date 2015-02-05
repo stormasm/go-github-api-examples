@@ -3,8 +3,11 @@
 
 source ./run/build
 
+cd ./examples/activity
+go run eventspublic.go
+
 #cd ./examples/markdown
 #go run main.go
 
-cd ./examples/repos
-go run main.go
+#cd ./examples/repos
+#go run main.go
