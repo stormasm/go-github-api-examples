@@ -15,4 +15,9 @@ func main() {
 	}
 
 	fmt.Printf("Number of events = %v\n", len(events))
+
+	for i, v := range events {
+		fmt.Printf("array value at [%d]=%s\n", i, *v.Type)
+	}
+
 }
