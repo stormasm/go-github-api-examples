@@ -14,5 +14,5 @@ func main() {
 		fmt.Println("Activities.ListEvents returned error: %v", err)
 	}
 
-	fmt.Println("%s", events)
+	fmt.Printf("Number of events = %v\n", len(events))
 }
