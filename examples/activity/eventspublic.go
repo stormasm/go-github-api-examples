@@ -31,7 +31,7 @@ func init() {
 
 func main() {
 
-	opt := &github.ListOptions{Page: 2}
+	opt := &github.ListOptions{Page: 2, PerPage: 100}
 	events, _, err := client.Activity.ListEvents(opt)
 	if err != nil {
 		fmt.Println("Activities.ListEvents returned error: %v", err)
