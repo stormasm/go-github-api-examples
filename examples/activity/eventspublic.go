@@ -20,4 +20,11 @@ func main() {
 		fmt.Printf("array value at [%d]=%s\n", i, *v.Type)
 	}
 
+	rate, _, err := client.RateLimit()
+	if err != nil {
+		fmt.Printf("Error fetching rate limit: %#v\n\n", err)
+	} else {
+		fmt.Printf("API Rate Limit: %d\n", rate.Remaining)
+	}
+
 }
