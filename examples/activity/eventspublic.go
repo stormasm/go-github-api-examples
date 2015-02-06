@@ -14,11 +14,11 @@ import (
 func main() {
 	client := github.NewClient(nil)
 
-	input := "# heading #\nLink to issue #1\n"
-	md, _, err := client.Markdown(input, &github.MarkdownOptions{Mode: "gfm", Context: "google/go-github"})
+	opt := &github.ListOptions{Page: 2}
+	events, _, err := client.Activity.ListEvents(opt)
 	if err != nil {
-		fmt.Printf("error: %v\n\n", err)
+		fmt.Println("Activities.ListEvents returned error: %v", err)
 	}
 
-	fmt.Printf("converted markdown:\n%v\n", md)
+	fmt.Println("%s",events)
 }
