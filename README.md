@@ -2,8 +2,7 @@
 
 [Will Norris]
 (https://github.com/willnorris)
-at Google has done a great job writing a Go client api to talk to the
-
+at Google has done a great job writing a Go client to talk to the
 [Github API]
 (https://developer.github.com/v3/)
 
