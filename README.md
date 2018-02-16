@@ -1,10 +1,8 @@
 
 
-[Will Norris]
-(https://github.com/willnorris)
+[Will Norris](https://github.com/willnorris)
 at Google has done a great job writing a Go client to talk to the
-[Github API]
-(https://developer.github.com/v3/).
+[Github API](https://developer.github.com/v3/).
 
 I have begun to write several examples which outline how to use
 this API simply and easily.
